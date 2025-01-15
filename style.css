@@ -29,11 +29,16 @@ body {
     background-color: var(--pale-blue);
 }
 
+.container {
+    background-color: var(--white);
+}
+
 .card {
     margin: 50px auto;
     box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
     width: 500px;
     border-radius: 2rem;
+    overflow: hidden;
 }
 
 .results {
@@ -43,7 +48,7 @@ body {
     align-items: center;
     text-align: center;
     gap: 1rem;
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 2rem;    
 }
 
 h2 {
@@ -91,7 +96,6 @@ h4 {
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    
 }
 
 .title {
@@ -102,13 +106,15 @@ h4 {
 .rows {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 3rem;
+    padding: 1rem .5rem;
     align-items: center;
+    border-radius: 10px;
 }
 
 .badge {
@@ -117,20 +123,36 @@ h4 {
     gap: .5rem;
 }
 
+.row:nth-child(1) {
+   background-color: hsl(0, 100%, 67%, .2); 
+}
+
 .row:nth-child(1) .badge b{
     color: var(--light-red);
     font-size: 18px;
 }
+
+.row:nth-child(2) {
+    background-color: hsl(39, 100%, 56%, .2); 
+ }
 
 .row:nth-child(2) .badge b{
     color: var(--orange-yellow);
     font-size: 18px;
 }
 
+.row:nth-child(3) {
+    background-color: hsl(166, 100%, 37%, .2); 
+ }
+
 .row:nth-child(3) .badge b{
     color: var(--green-teal);
     font-size: 18px;
 }
+
+.row:nth-child(4) {
+    background-color: hsl(234, 85%, 45%, .2); 
+ }
 
 .row:nth-child(4) .badge b{
     color: var(--cobalt-blue);
